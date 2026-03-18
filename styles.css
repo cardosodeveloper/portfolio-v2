@@ -613,3 +613,10 @@ footer {
   .for-whom-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 1rem; text-align: center; }
 }
+
+/* CURSOR — desabilitado em touch/mobile */
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+  .btn-primary, .btn-whatsapp { cursor: pointer; }
+}
